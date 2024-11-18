@@ -18,11 +18,9 @@ const UpgradingSystem = ({
 
   if (points >= upgrades.price) {
     return (
-      <div>
+      <div className="Upgrades" disabled={points < upgrades.price} onClick={handleClick}>
         <h3>{upgrades.name}</h3>
-        <button disabled={points < upgrades.price} onClick={handleClick}>
-          Click for {upgrades.price}
-        </button>
+        <h4>{upgrades.price} points</h4>
       </div>
     );
   }
