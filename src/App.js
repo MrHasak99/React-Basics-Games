@@ -33,9 +33,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2 className="Points">Points = {points}</h2>
-        <h1 className="Score">{counter} Trashbags Picked Up</h1>
-        <h2>{upgrade} bags of trash picked up per click</h2>
+        <h2 className="Points">Total Trashbags Picked Up = {counter}</h2>
+        <h1 className="Score">{points} Trashbags Picked Up</h1>
+        <h2>Bags of Trash Picked Up Per Click: {upgrade}</h2>
         <button onClick={handleClick}>Pick Up Trash</button>
         <div>{updatedUpgradeList}</div>
       </header>

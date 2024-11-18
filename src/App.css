@@ -5,6 +5,7 @@
   color: lime;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .Score {
@@ -17,12 +18,14 @@
 }
 
 .Upgrades {
-  margin: 10;
+  background-color: darkgreen;
+  color: white;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
   flex-wrap: wrap;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   cursor: pointer;
-  background-color: brown;
-  height: 100px;
-  width: 170px;
+  width: 25%;
 }
